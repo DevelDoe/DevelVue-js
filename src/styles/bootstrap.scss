@@ -1,0 +1,19 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/';
+
+/* Bootstrap DateTimePicker */
+// These are deprecated values in Bootstrap that the DateTimePicker needs.
+// Copied from Bootstrap v3.3.6.
+$btn-primary-bg: $ctds-purple;
+$btn-primary-color: $white;
+
+$border-radius-base: 4px;
+
+$gray-light: $gray-40;
+$gray-lighter: $gray-20;
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+// @import '~eonasdan-bootstrap-datetimepicker/src/sass/bootstrap-datetimepicker-build.scss'; 

@@ -1,0 +1,122 @@
+@import 'fonts';
+@import 'variables';
+@import 'bootstrap';
+@import 'framework';
+
+// Import Font Awesome Icon Library
+$fa-font-path: '~font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome';
+
+/* Global */
+html, body {
+    height: 100%;
+}
+body {
+    font: $ctds-font-size_medium $ctds-font-family;
+    background: $gray-5;
+}
+a:not(.ctds-button) {
+    color: $ctds-purple;
+    font-weight: 600;
+    &:visited {
+        color: $ctds-purple;
+    }
+}
+pre {
+    font-size: $ctds-font-size_medium;
+    line-height: $ctds-font-size_medium;
+}
+code {
+    color: $gray-80;
+    background-color: #f5f5f5;
+    padding: 0 7px;
+}
+li p {
+    margin: 0;
+}
+
+/* Navbar */
+.ctds-navbar {
+    background-color: $ctds-purple;
+
+    .navbar-nav > li > a {
+        color: $white;
+
+        &:hover, &:focus {
+            color: $gray-10;
+        }
+    }
+
+    a.navbar-brand,
+    a.nav-link {
+        color: $white;
+        text-decoration: none;
+        &:hover {
+            color: $gray-10;
+            text-decoration: none;
+        }
+    }
+    a.navbar-brand {
+        font-size: $ctds-font-size_large;
+    }
+    a.nav-link {
+        font-size: $ctds-font-size_medium;
+    }
+
+    a.router-link-exact-active {
+        &.navbar-brand {
+            font-size: $ctds-font-size_large;
+            color: $white;
+        }
+        &.nav-link {
+            padding-bottom: 5px;
+            border-bottom: 2px solid $white;
+        }
+    }
+}
+
+/* Nav Pills */
+.nav-pills > li > a.selected {
+    background-color: $ctds-purple;
+}
+
+/* Documentation header */
+article.documentation-article {
+    > h3 {
+        font-size: $ctds-font-size_medium;
+        font-weight: $ctds-font-weight_bold;
+        border-bottom: 1px solid $gray-20;
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+    h4 {
+        font-size: $ctds-font-size_small;
+        font-weight: $ctds-font-weight_bold;
+        border-bottom: 1px solid $gray-10;
+        &:first-of-type {
+            margin-top: 0;
+        }
+        font-weight: 600;
+    }
+    .documentation-example {
+        background-image: linear-gradient(45deg, $gray-10 25%, transparent 25%), linear-gradient(-45deg, $gray-10 25%, transparent 25%), linear-gradient(45deg, transparent 75%, $gray-10 75%), linear-gradient(-45deg, transparent 75%, $gray-10 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        padding: 7px;
+        margin-bottom: 7px;
+    }
+}
+
+/* Lists in CTDS Tiles */
+.ctds-tile-body {
+    article > ul > li:not(:first-of-type), article > ul > li > ul li {
+        margin-top: 7px;
+    }
+}
+// attribute above braks tabs alignment, hack below
+.nav-tabs {
+    li {
+        margin-top: 0 !important;
+    }
+}
