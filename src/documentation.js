@@ -3,9 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Framework from './Framework'
+Vue.use(Framework)
 
 import 'bootstrap-sass'
 import './styles/app.scss'
+
+
 
 Vue.config.productionTip = false
 
