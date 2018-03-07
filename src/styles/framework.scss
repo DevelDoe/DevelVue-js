@@ -1,7 +1,7 @@
 @import 'variables';
 
 /* Tabs */
-.ctds-tabs {
+.devel-tabs {
     .nav-item a {
         color: $gray-80;
         background-color: $gray-20;
@@ -36,9 +36,9 @@
 }
 
 /* Card */
-.ctds-card {
+.devel-card {
     overflow: auto;
-    .ctds-card-header {
+    .devel-card-header {
         color: $white;
         background-color: $gray-60;
         border-top-left-radius: 10px;
@@ -46,17 +46,17 @@
         padding: 14px;
         overflow: auto;
 
-        .ctds-card-header-title {
+        .devel-card-header-title {
             padding: 0;
             h1 {
-                font-size: $ctds-font-size_large;
+                font-size: $devel-font-size_large;
                 margin-top: 0;
             }
         }
 
-        .ctds-card-header-icon-buttons {
+        .devel-card-header-icon-buttons {
             margin-bottom: 14px;
-            .ctds-icon-button {
+            .devel-icon-button {
                 color: $white;
                 &:disabled {
                     color: $gray-20;
@@ -71,7 +71,7 @@
         }
     }
 
-    .ctds-card-body {
+    .devel-card-body {
         width: 100%;
         color: $gray-80;
         background-color: $gray-10;
@@ -81,15 +81,15 @@
 }
 
 /* Tile */
-.ctds-tile {
+.devel-tile {
     margin-bottom: 14px;
-    .ctds-tile-header {
+    .devel-tile-header {
         color: $white;
         background-color: $gray-40;
         padding: 7px 14px;
         position: relative;
         h3 {
-            font-size: $ctds-font-size_medium;
+            font-size: $devel-font-size_medium;
             margin: 0;
         }
         button {
@@ -102,22 +102,22 @@
         }
     }
 
-    .ctds-tile-body {
+    .devel-tile-body {
         color: $gray-80;
         background-color: $gray-5;
         padding: 7px 14px;
 
-        &.ctds-grid {
+        &.devel-grid {
             width: 100%;
         }
     }
 }
 
 /* Grid */
-.ctds-grid {
+.devel-grid {
     td, th {
         padding: 7px;
-        &.ctds-grid-delete-column {
+        &.devel-grid-delete-column {
             width: 1px;
         }
     }
@@ -130,16 +130,16 @@
             &:nth-of-type(even) {
                 background-color: $gray-5;
             }
-            &:hover:not(.ctds-grid-interactive-row),
+            &:hover:not(.devel-grid-interactive-row),
             &.selected {
                 color: $white;
                 background-color: $gray-40;
             }
         }
-        td .ctds-icon-button {
-            font-size: $ctds-font-size_medium;
+        td .devel-icon-button {
+            font-size: $devel-font-size_medium;
             i {
-                font-size: $ctds-font-size_medium;
+                font-size: $devel-font-size_medium;
                 &.fa-plus {
                     margin-right: 7px;
                 }
@@ -149,14 +149,14 @@
 }
 
 /* Buttons */
-.ctds-button {
+.devel-button {
     color: $white;
     background-color: $gray-40;
     border: none;
     border-radius: 22px;
     padding-left: 28px;
     padding-right: 28px;
-    font-size: $ctds-font-size_medium;
+    font-size: $devel-font-size_medium;
     &:disabled {
         color: $white;
         background-color: $gray-20;
@@ -167,12 +167,12 @@
     }
 }
 
-.ctds-icon-button {
+.devel-icon-button {
     color: $gray-80;
     background: 0 0;
     border: none;
-    font-size: $ctds-font-size_large;
-    line-height: $ctds-font-size_large;
+    font-size: $devel-font-size_large;
+    line-height: $devel-font-size_large;
     padding: 0;
     &:disabled {
         color: $gray-20;
@@ -183,13 +183,13 @@
         border: none;
     }
     i {
-        font-size: $ctds-font-size_large;
-        line-height: $ctds-font-size_large;
+        font-size: $devel-font-size_large;
+        line-height: $devel-font-size_large;
     }
 }
 
 /* Search Input */
-.ctds-search {
+.devel-search {
     border-radius: 16px;
 }
 
@@ -203,8 +203,8 @@
     padding: 0 2.1rem;
     label {
         margin: 0;
-        font-size: $ctds-font-size_small;
-        font-weight:$ctds-font-weight_bold;
+        font-size: $devel-font-size_small;
+        font-weight:$devel-font-weight_bold;
         color: $gray-80;
         padding: 0 0 0.5rem 0;
     }
@@ -216,33 +216,33 @@
     .form-control {
         border-radius: 0;
         color: $gray-80;
-        font-size: $ctds-font-size_medium;
-        line-height: $ctds_input-height; // Align content vertically center.
+        font-size: $devel-font-size_medium;
+        line-height: $devel_input-height; // Align content vertically center.
         padding: 0; // Clear all default (IE fix)
         padding-left: 15px;
-        height: $ctds_input-height;
+        height: $devel_input-height;
         &:focus {
-            background: $ctds_control-fill;
-            border-color: $ctds_control-border;
+            background: $devel_control-fill;
+            border-color: $devel_control-border;
         }
     }
-    .ctds-control-error {
-        border: 1px solid $ctds_control-border-error;
-        background: $ctds_control-fill-error;
+    .devel-control-error {
+        border: 1px solid $devel_control-border-error;
+        background: $devel_control-fill-error;
         &:focus {
-            background: $ctds_control-fill-error;
-            border-color:  $ctds_control-border-error;
+            background: $devel_control-fill-error;
+            border-color:  $devel_control-border-error;
         }
     }
-    .ctds-error-msg {
+    .devel-error-msg {
         margin-top: 3px;
-        color: $ctds_control-border-error;
+        color: $devel_control-border-error;
     }
 }
 
 
 /* Bucket */
-.ctds-bucket {
+.devel-bucket {
     color: $gray-80;
     background-color: $gray-10;
     position: fixed;
@@ -255,10 +255,10 @@
     padding: 50px 28px 10px 28px;
     box-shadow: 0 0 15px 0 $gray-80;
 
-    .ctds-bucket-header {
+    .devel-bucket-header {
         overflow: hidden;
         padding: 14px 0;
-        font-size: $ctds-font-size_large;
+        font-size: $devel-font-size_large;
         h2 {
             margin-top: 0;
         }
@@ -266,6 +266,6 @@
 }
 
 /* Data field date */
-.ctds-data-field-date {
+.devel-data-field-date {
     position: relative;
 }

@@ -12,19 +12,19 @@ html, body {
     height: 100%;
 }
 body {
-    font: $ctds-font-size_medium $ctds-font-family;
+    font: $devel-font-size_medium $devel-font-family;
     background: $gray-5;
 }
-a:not(.ctds-button) {
-    color: $ctds-purple;
+a:not(.devel-button) {
+    color: $devel-primary;
     font-weight: 600;
     &:visited {
-        color: $ctds-purple;
+        color: $devel-primary;
     }
 }
 pre {
-    font-size: $ctds-font-size_medium;
-    line-height: $ctds-font-size_medium;
+    font-size: $devel-font-size_medium;
+    line-height: $devel-font-size_medium;
 }
 code {
     color: $gray-80;
@@ -36,8 +36,8 @@ li p {
 }
 
 /* Navbar */
-.ctds-navbar {
-    background-color: $ctds-purple;
+.devel-navbar {
+    background-color: $devel-primary;
 
     .navbar-nav > li > a {
         color: $white;
@@ -57,15 +57,15 @@ li p {
         }
     }
     a.navbar-brand {
-        font-size: $ctds-font-size_large;
+        font-size: $devel-font-size_large;
     }
     a.nav-link {
-        font-size: $ctds-font-size_medium;
+        font-size: $devel-font-size_medium;
     }
 
     a.router-link-exact-active {
         &.navbar-brand {
-            font-size: $ctds-font-size_large;
+            font-size: $devel-font-size_large;
             color: $white;
         }
         &.nav-link {
@@ -77,22 +77,22 @@ li p {
 
 /* Nav Pills */
 .nav-pills > li > a.selected {
-    background-color: $ctds-purple;
+    background-color: $devel-primary;
 }
 
 /* Documentation header */
 article.documentation-article {
     > h3 {
-        font-size: $ctds-font-size_medium;
-        font-weight: $ctds-font-weight_bold;
+        font-size: $devel-font-size_medium;
+        font-weight: $devel-font-weight_bold;
         border-bottom: 1px solid $gray-20;
         &:first-of-type {
             margin-top: 0;
         }
     }
     h4 {
-        font-size: $ctds-font-size_small;
-        font-weight: $ctds-font-weight_bold;
+        font-size: $devel-font-size_small;
+        font-weight: $devel-font-weight_bold;
         border-bottom: 1px solid $gray-10;
         &:first-of-type {
             margin-top: 0;
@@ -108,8 +108,8 @@ article.documentation-article {
     }
 }
 
-/* Lists in CTDS Tiles */
-.ctds-tile-body {
+/* Lists in devel Tiles */
+.devel-tile-body {
     article > ul > li:not(:first-of-type), article > ul > li > ul li {
         margin-top: 7px;
     }
